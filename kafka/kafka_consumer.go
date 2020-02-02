@@ -1,72 +1,45 @@
-package consumer
+package main
 
 import (
 	"fmt"
 	"github.com/Shopify/sarama"
-	"github.com/astaxie/beego/logs"
 	"sync"
-	"seagullfly/services/handler"
-	"seagullfly/models"
 )
 
-type KafkaConsumer struct {
-	consumer sarama.Consumer
-}
+var (
+	wg sync.WaitGroup
+)
 
-func NewKafkaConsumer(cfg []string) (*KafkaConsumer, error) {
-	svc := new(KafkaConsumer)
-
-	consumer, err := sarama.NewConsumer(cfg, nil)
-	if err != nil {
-		logs.Error(err)
-		return nil, err
-	}
-
-	svc.consumer = consumer
-
-	return svc, nil
-}
-
-func (this *KafkaConsumer) Consume(topic string) {
-
-	partitions, err := this.consumer.Partitions(topic)
+func main() {
+	consumer, err := sarama.NewConsumer([]string{"localhost:9090","localhost:9091","localhost:9092"}, nil)
 
 	if err != nil {
-		logs.Error(err)
-		return
+		panic(err)
 	}
 
-	var wg sync.WaitGroup
+	partitionList, err := consumer.Partitions("test3")
 
-	for partition := range partitions {
-		pc, err := this.consumer.ConsumePartition(topic, int32(partition), sarama.OffsetNewest)
+	if err != nil {
+		panic(err)
+	}
+
+	for partition := range partitionList {
+		pc, err := consumer.ConsumePartition("test3", int32(partition), 3)
 		if err != nil {
-			logs.Error(err)
-			return
+			panic(err)
 		}
 
+		defer pc.AsyncClose()
+
 		wg.Add(1)
+
 		go func(sarama.PartitionConsumer) {
 			defer wg.Done()
 			for msg := range pc.Messages() {
-				fmt.Printf("Topic: %s, Partition:%d, Offset:%d, Key:%s, Value:%s\n", topic, msg.Partition, msg.Offset, string(msg.Key), string(msg.Value))
-				this.Handle(topic, msg.Value)
+				fmt.Printf("Partition:%d, Offset:%d, Key:%s, Value:%s\n", msg.Partition, msg.Offset, string(msg.Key), string(msg.Value))
 			}
 		}(pc)
 		wg.Wait()
+		consumer.Close()
 	}
-	this.consumer.Close()
-}
-
-func (this *KafkaConsumer) Handle(topic string, message []byte) bool {
-	if topic == "article" {
-		handler := handler.GetArticleDataHandler()
-		msg := new(models.ArticlesOrm)
-
-		err := handler.Handle(msg)
-		if err == nil {
-			return true
-		}
-	}
-	return false
 }

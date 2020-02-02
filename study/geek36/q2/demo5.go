@@ -1,7 +1,9 @@
-package main
+package q2
 
 import (
 	"flag"
+	lib5 "awesomelib-go/study/geek36/q2/lib"
+	"awesomelib-go/study/geek36/lib"
 )
 
 var name string
@@ -12,5 +14,6 @@ func init() {
 
 func main() {
 	flag.Parse()
-	hello(name)
+	lib.HelloWorld()
+	lib5.Hello(name)
 }

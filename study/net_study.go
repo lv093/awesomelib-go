@@ -21,10 +21,12 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	count ++
 	mu.Unlock()
 	fmt.Fprintf(w, "hello %s", r.URL.Path)
+	fmt.Println( "hello %s", r.URL.Path)
 }
 
 func counter(w http.ResponseWriter, r *http.Request) {
 	mu.Lock()
 	fmt.Fprintf(w, "hello %d", count)
+	fmt.Println( "hello %d", count)
 	mu.Unlock()
 }
