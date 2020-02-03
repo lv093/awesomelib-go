@@ -12,7 +12,6 @@ func RadixIndexSort(targets []string, index int) []string {
 
 func main() {
 	targets := []string{"hell", "world"}
-	sort.Sort(targets)
 	RadixSort(targets, 1)
 }
 /**
