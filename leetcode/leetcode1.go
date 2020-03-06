@@ -2,61 +2,76 @@ package main
 
 import (
 	"fmt"
+	"strings"
 )
 
-/**
-假设按照升序排序的数组在预先未知的某个点上进行了旋转。
-( 例如，数组 [0,1,2,4,5,6,7] 可能变为 [4,5,6,7,0,1,2] )。
-搜索一个给定的目标值，如果数组中存在这个目标值，则返回它的索引，否则返回 -1 。
-你可以假设数组中不存在重复的元素。
-你的算法时间复杂度必须是 O(log n) 级别。
- */
 func main() {
-	sources := []int{4}
-	fmt.Println(BinarySearch(sources, 2))
+	fmt.Println(strings.Contains("", "."))
 }
 
 /**
-利用二分法找到无旋转区域，在该有序的数组段中搜索target
+1.首先找到小于target的最大值下标pos
+2.然后在[0. pos]间压缩寻找
  */
-func BinarySearch(nums []int, target int) int {
-	if len(nums) == 0 {
-		return -1
-	}
-	left := false
-	if target >= nums[0] {
-		left = true
-	}
-	//寻找旋转点
-	maxSize := len(nums)
-	low, high := 0, maxSize - 1
-	mid := (low + high) / 2
-	for mid >= 0 && mid <= maxSize - 1 {
-		if left {
-			if nums[mid] < nums[0] {
-				high = mid - 1
-			} else if nums[mid] > target {
-				high = mid - 1
-			} else if nums[mid] < target {
-				low = mid + 1
-			} else {
-				return mid
-			}
+func twoSum(nums []int, target int) []int {
+	max := len(nums) - 1
+	origin := make(map[int]int, max + 1)
+	another := make(map[int]int, max + 1)
+	for i, value := range nums {
+		if _, ok := origin[value]; ok {
+			another[value] = i
 		} else {
-			if nums[mid] >= nums[0] {
-				low = mid + 1
-			} else if nums[mid] > target {
-				high = mid - 1
-			} else if nums[mid] < target {
-				low = mid + 1
-			} else {
-				return mid
-			}
+			origin[value] = i
 		}
-		if (low + high) / 2 == mid {
-			return -1
-		}
-		mid = (low + high) / 2
+
 	}
-	return -1
+	QuickSort(nums, 0, max)
+	low, high := 0, max
+	for low != high {
+		if nums[low] + nums[high] > target {
+			high--
+		} else if nums[low] + nums[high] < target {
+			low++
+		} else {
+			break
+		}
+	}
+	fmt.Println(nums, low, high)
+	res := make([]int, 2)
+	if value, ok := origin[nums[low]]; ok {
+		res[0] = value
+	}
+	if nums[low] == nums[high] {
+		if value, ok := another[nums[high]]; ok {
+			res[1] = value
+		}
+	} else {
+		if value, ok := origin[nums[high]]; ok {
+			res[1] = value
+		}
+	}
+	return res
+}
+
+func partition(arr []int, p int, q int) int {
+	temp := arr[q]
+	i := p - 1
+	j := p
+	for ;j < q;j++ {
+		if arr[j] <= temp {
+			i = i + 1
+			arr[i], arr[j] = arr[j], arr[i]
+		}
+	}
+	arr[i + 1], arr[q] = arr[q], arr[i + 1]
+	return i + 1
+}
+
+func QuickSort(arr []int, low int, high int) []int {
+	if low < high {
+		middle := partition(arr, low, high)
+		QuickSort(arr, low, middle - 1)
+		QuickSort(arr, middle + 1, high)
+	}
+	return arr
 }

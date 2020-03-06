@@ -52,6 +52,9 @@ func main() {
 	fmt.Fprintln(&b, "//go:generate go run mksizeclasses.go")
 	fmt.Fprintln(&b)
 	fmt.Fprintln(&b, "package runtime")
+	targets := make([]byte, 0)
+	len, err := b.Write(targets)
+	println(string(targets), len, err)
 	classes := makeClasses()
 
 	printComment(&b, classes)
@@ -59,6 +62,7 @@ func main() {
 	printClasses(&b, classes)
 
 	out, err := format.Source(b.Bytes())
+	println(out)
 	if err != nil {
 		log.Fatal(err)
 	}
