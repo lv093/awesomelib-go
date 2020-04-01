@@ -17,20 +17,23 @@ import (
 */
 func main() {
 
-	fmt.Println(strings.Contains("", ""))
-	os.Exit(0)
 	fmt.Println("download begin.....")
 
 	//url := "http://flv5.bn.netease.com/live163/store/208588/serverpush_18783_1521024752481_208588_0-"
 	//url_suffix := ".ts"
 	url_suffix := ".jpg"
-	//url := "https://www.yuoimg.com/u/20200221/17220181.jpg"
-	url := "https://www.privacypic.com/images/2020/03/05/1641907c5cd6ed4dd.jpg"
+	//url := "https://www.privacypic.com/images/2020/03/05/1641907c5cd6ed4dd.jpg"
+	url := "http://mv.eastday.com/vyule/20170602/20170602114054589846059_1_06400360.mp4"
 	res, err := http.Get(url)
 	if err != nil {
 		panic(err)
 	}
-	f, err := os.Create("17220181.jpg")
+	urlSplits := strings.Split(url, "/")
+	name := "xxx"
+	if len(urlSplits) > 0 {
+		name = urlSplits[len(urlSplits) - 1]
+	}
+	f, err := os.Create(name)
 	if err != nil {
 		panic(err)
 	}

@@ -1,14 +1,23 @@
 package main
-import "fmt"
-// 声明空结构体测试结构体逃逸情况
-type Data struct {
-}
-func dummy() *Data {
-	// 实例化c为Data类型
-	var c Data
-	//返回函数局部变量地址
-	return &c
-}
+
+import (
+	"sync"
+	"fmt"
+	"runtime"
+)
+
+var wg sync.WaitGroup
+
 func main() {
-	fmt.Println(dummy())
+	runtime.GOMAXPROCS(1)
+	for i := 0; i < 1000; i++ {
+		wg.Add(1)
+		go ii(i)
+	}
+	wg.Wait()
+}
+
+func ii(i int) {
+	defer wg.Done()
+	fmt.Println(i)
 }

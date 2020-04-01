@@ -1,27 +1,43 @@
 package main
-
 import (
-	"net/http"
-	"io/ioutil"
+	"fmt"
 	"log"
+	"net/http"
+	"strings"
 )
+func sayhelloName(w http.ResponseWriter, r *http.Request) {
+	r.ParseForm()
+	fmt.Println(r.Form)
+	fmt.Println("path", r.URL.Path)
+	fmt.Println("scheme", r.URL.Scheme)
+	fmt.Println(r.Form["url_long"])
+	for k, v := range r.Form {
+		fmt.Println("key:", k)
+		fmt.Println("val:", strings.Join((v), ""))
+	}
+	fmt.Println(w, "hello world")
+	w.Write([]byte("end"))
+}
 
-func echo(wr http.ResponseWriter, request *http.Request)  {
-	msg, err := ioutil.ReadAll(request.Body)
-	if err != nil {
-		wr.Write([]byte("failed"))
-		return
+func sayhelloName2(w http.ResponseWriter, r *http.Request) {
+	r.ParseForm()
+	fmt.Println(r.Form)
+	fmt.Println("path", r.URL.Path)
+	fmt.Println("scheme", r.URL.Scheme)
+	fmt.Println(r.Form["url_long"])
+	for k, v := range r.Form {
+		fmt.Println("key:", k)
+		fmt.Println("val:", strings.Join((v), ""))
 	}
-	writeLen, err := wr.Write(msg)
-	if err != nil || writeLen != len(msg) {
-		log.Println(err, "write len:", writeLen)
-	}
+	fmt.Println(w, "hello world")
+	w.Write([]byte("hello2"))
 }
 
 func main() {
-	http.HandleFunc("/", echo)
-	err := http.ListenAndServe(":8080", nil)
+	http.HandleFunc("/hello/", sayhelloName2)
+	http.HandleFunc("/hello", sayhelloName)
+	err := http.ListenAndServe(":9090", nil)
 	if err != nil {
-		log.Fatal(err)
+		log.Fatal("ListenAndServe:", err)
 	}
 }

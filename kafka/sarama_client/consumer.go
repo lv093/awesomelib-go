@@ -1,4 +1,4 @@
-package main
+package sarama_client
 
 import (
 	"fmt"
@@ -10,21 +10,23 @@ var (
 	wg sync.WaitGroup
 )
 
-func main() {
-	consumer, err := sarama.NewConsumer([]string{"localhost:9090","localhost:9091","localhost:9092"}, nil)
+func Consumer() {
+	consumer, err := sarama.NewConsumer([]string{"localhost:9091","localhost:9092","localhost:9093"}, nil)
 
 	if err != nil {
 		panic(err)
 	}
 
-	partitionList, err := consumer.Partitions("test3")
+	partitionList, err := consumer.Partitions("replicated_topic")
+	println(partitionList)
 
 	if err != nil {
 		panic(err)
 	}
 
 	for partition := range partitionList {
-		pc, err := consumer.ConsumePartition("test3", int32(partition), 3)
+		println(partition)
+		pc, err := consumer.ConsumePartition("replicated_topic", int32(partition), 3)
 		if err != nil {
 			panic(err)
 		}
