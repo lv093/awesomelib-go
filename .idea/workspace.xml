@@ -2,24 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7801274-4908-4c20-a4b4-a41407416f53" name="Default" comment="1.naive string match;2.KMP match algorithm">
-      <change beforePath="" afterPath="$PROJECT_DIR$/crawler/toutiao/schedule_service.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/crawler/toutiao_main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/crawler/zhihu/client_service.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/crawler/zhihu/schedule_service.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/crawler/zhihu_main.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kafka/main_sarama.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kafka/sarama_client/producer.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/pattern/01_simple_factory/simple_factory_pattern.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/pattern/01_simple_factory/simple_factory_pattern_test.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/pattern/02_factory_method/factory_method.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/pattern/02_factory_method/factory_method_test.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/leetcode/leetcode05.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/rpclib/easy_rpc/hello/hello.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/rpclib/easy_rpc/rpc_client.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/rpclib/easy_rpc/rpc_server.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/rpclib/grpc/helloworld.proto" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/rpclib/http_rpc/rpc_client.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/rpclib/http_rpc/rpc_service.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/rpclib/json_rpc/hello/hello_json.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/rpclib/json_rpc/rpc_client.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/rpclib/json_rpc/rpc_service.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/rpclib/protobuf_rpc/pbs/base.proto" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/rpclib/protobuf_rpc/pbs/hello.proto" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/rpclib/safe_rpc/rpc_client.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/rpclib/safe_rpc/rpc_server.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/rpclib/test/arith.pb/arith.proto" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/rpclib/test/rpc_server.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/utils/logger.go" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/crawler/video_crawler/ts.go" afterPath="$PROJECT_DIR$/crawler/video_crawler/ts.go" />
-      <change beforePath="$PROJECT_DIR$/kafka/kafka_consumer.go" afterPath="$PROJECT_DIR$/kafka/sarama_client/consumer.go" />
-      <change beforePath="$PROJECT_DIR$/kafka/kafka_producer.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/main.go" afterPath="$PROJECT_DIR$/main.go" />
-      <change beforePath="$PROJECT_DIR$/study/http/hello_http.go" afterPath="$PROJECT_DIR$/study/http/hello_http.go" />
-      <change beforePath="$PROJECT_DIR$/study/test_heap.go" afterPath="$PROJECT_DIR$/study/test_heap.go" />
+      <change beforePath="$PROJECT_DIR$/leetcode/leetcode4.go" afterPath="$PROJECT_DIR$/leetcode/leetcode4.go" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,45 +31,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="simple_factory_pattern.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pattern/01_simple_factory/simple_factory_pattern.go">
+      <file leaf-file-name="leetcode05.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/leetcode/leetcode05.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="factory_method.go" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pattern/02_factory_method/factory_method.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="factory_method_test.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pattern/02_factory_method/factory_method_test.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="35" lean-forward="false" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+            <state relative-caret-position="923">
+              <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
               <folding>
-                <element signature="e#24#40#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="simple_factory_pattern_test.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pattern/01_simple_factory/simple_factory_pattern_test.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-              <folding>
-                <element signature="e#24#40#0" expanded="true" />
+                <element signature="e#14#27#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -100,6 +69,8 @@
       <find>00000n</find>
       <find>n.FirstChild.Data</find>
       <find>`</find>
+      <find>ListenAndServeArithService</find>
+      <find>PhoneType</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="/usr/local/go" />
@@ -121,36 +92,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/library/socket/test_signal.go" />
-        <option value="$PROJECT_DIR$/library/grace_reset/server.go" />
-        <option value="$PROJECT_DIR$/library/grace_reset/grace_http.go" />
-        <option value="$PROJECT_DIR$/library/test_grace_http.go" />
-        <option value="$PROJECT_DIR$/library/test/test_grace_http.go" />
-        <option value="$PROJECT_DIR$/library/test/test_signal.go" />
-        <option value="$PROJECT_DIR$/go_source/lib/sum.go" />
-        <option value="$PROJECT_DIR$/go_source/main.go" />
-        <option value="$PROJECT_DIR$/go_source/alice.go" />
-        <option value="$PROJECT_DIR$/go_source/test_memory_alloc.go" />
-        <option value="$PROJECT_DIR$/go_source/test_destructor.go" />
-        <option value="$PROJECT_DIR$/go_source/malloc/test_msize.go" />
-        <option value="$PROJECT_DIR$/go_source/test_msize.go" />
-        <option value="$PROJECT_DIR$/go_source/test.go" />
-        <option value="$PROJECT_DIR$/go_source/main/test1.go" />
-        <option value="$PROJECT_DIR$/leetcode/leetcode2.go" />
-        <option value="$PROJECT_DIR$/leetcode/leetcode3.go" />
-        <option value="$PROJECT_DIR$/leetcode/leetcode4.go" />
-        <option value="$PROJECT_DIR$/crawler/video_crawler/image.go" />
-        <option value="$PROJECT_DIR$/crawler/cl/crawler_url.go" />
-        <option value="$PROJECT_DIR$/crawler/crawler_utils/constant.go" />
-        <option value="$PROJECT_DIR$/crawler/crawler_utils/coder.go" />
-        <option value="$PROJECT_DIR$/crawler/cl/download_service.go" />
-        <option value="$PROJECT_DIR$/crawler/cl/parse_service.go" />
-        <option value="$PROJECT_DIR$/crawler/cl/url_parser.go" />
-        <option value="$PROJECT_DIR$/crawler/cl/save_service.go" />
-        <option value="$PROJECT_DIR$/crawler/cl_main.go" />
-        <option value="$PROJECT_DIR$/crawler/cl/schedule_service.go" />
-        <option value="$PROJECT_DIR$/crawler/cl/client_service.go" />
-        <option value="$PROJECT_DIR$/crawler/video_crawler/ts.go" />
         <option value="$PROJECT_DIR$/crawler/toutiao_main.go" />
         <option value="$PROJECT_DIR$/crawler/toutiao/schedule_service.go" />
         <option value="$PROJECT_DIR$/crawler/zhihu_main.go" />
@@ -172,6 +113,36 @@
         <option value="$PROJECT_DIR$/pattern/01_simple_factory/simple_factory_pattern_test.go" />
         <option value="$PROJECT_DIR$/pattern/02_factory_method/factory_method_test.go" />
         <option value="$PROJECT_DIR$/pattern/02_factory_method/factory_method.go" />
+        <option value="$PROJECT_DIR$/rpclib/rpc_server.go" />
+        <option value="$PROJECT_DIR$/rpclib/rpc_client.go" />
+        <option value="$PROJECT_DIR$/rpclib/easy_rpc/rpc_server.go" />
+        <option value="$PROJECT_DIR$/rpclib/safe_rpc/server_service.go" />
+        <option value="$PROJECT_DIR$/rpclib/safe_rpc/hello.go" />
+        <option value="$PROJECT_DIR$/rpclib/safe_rpc/HelloService/hello.go" />
+        <option value="$PROJECT_DIR$/rpclib/safe_rpc/hello/hello.go" />
+        <option value="$PROJECT_DIR$/rpclib/safe_rpc/rpc_server.go" />
+        <option value="$PROJECT_DIR$/rpclib/safe_rpc/hello/hello_alice.go" />
+        <option value="$PROJECT_DIR$/rpclib/safe_rpc/rpc_client.go" />
+        <option value="$PROJECT_DIR$/rpclib/easy_rpc/hello/HelloJsonService.go" />
+        <option value="$PROJECT_DIR$/rpclib/json_rpc/rpc_service.go" />
+        <option value="$PROJECT_DIR$/rpclib/json_rpc/rpc_client.go" />
+        <option value="$PROJECT_DIR$/rpclib/http_rpc/rpc_service.go" />
+        <option value="$PROJECT_DIR$/rpclib/http_rpc/rpc_client.go" />
+        <option value="$PROJECT_DIR$/rpclib/proto_rpc/pb/arith.proto" />
+        <option value="$PROJECT_DIR$/rpclib/protobuf_rpc/pb_files/hello.proto" />
+        <option value="$PROJECT_DIR$/rpclib/proto_rpc/rpc_client.go" />
+        <option value="$PROJECT_DIR$/rpclib/proto_rpc/rpc_server.go" />
+        <option value="$PROJECT_DIR$/rpclib/test/arith.pb/arith.proto" />
+        <option value="$PROJECT_DIR$/rpclib/test/rpc_server.go" />
+        <option value="$PROJECT_DIR$/rpclib/protobuf_rpc/pbs/base.proto" />
+        <option value="$PROJECT_DIR$/rpclib/protobuf_rpc/pbs/hello.proto" />
+        <option value="$PROJECT_DIR$/library/log_util.go" />
+        <option value="$PROJECT_DIR$/utils/logger.go" />
+        <option value="$PROJECT_DIR$/rpclib/grpc.go" />
+        <option value="$PROJECT_DIR$/rpclib/grpc/helloworld.proto" />
+        <option value="$PROJECT_DIR$/leetcode/leetcode4.go" />
+        <option value="$PROJECT_DIR$/rpclib/easy_rpc/rpc_client.go" />
+        <option value="$PROJECT_DIR$/leetcode/leetcode05.go" />
       </list>
     </option>
   </component>
@@ -186,7 +157,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="825" />
@@ -228,8 +199,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -240,19 +209,18 @@
             <path>
               <item name="awesomelib-go" type="b2602c69:ProjectViewProjectNode" />
               <item name="awesomelib-go" type="462c0819:PsiDirectoryNode" />
-              <item name="pattern" type="462c0819:PsiDirectoryNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="awesomelib-go" type="b2602c69:ProjectViewProjectNode" />
               <item name="awesomelib-go" type="462c0819:PsiDirectoryNode" />
-              <item name="pattern" type="462c0819:PsiDirectoryNode" />
-              <item name="01_simple_factory" type="462c0819:PsiDirectoryNode" />
+              <item name="rpclib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="awesomelib-go" type="b2602c69:ProjectViewProjectNode" />
               <item name="awesomelib-go" type="462c0819:PsiDirectoryNode" />
-              <item name="pattern" type="462c0819:PsiDirectoryNode" />
-              <item name="02_factory_method" type="462c0819:PsiDirectoryNode" />
+              <item name="rpclib" type="462c0819:PsiDirectoryNode" />
+              <item name="easy_rpc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="awesomelib-go" type="b2602c69:ProjectViewProjectNode" />
@@ -261,42 +229,35 @@
             <path>
               <item name="awesomelib-go" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="GOPATH &lt;awesomelib-go&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="Go SDK 1.13.10" type="20ee2d1f:SyntheticLibraryElementNode" />
             </path>
             <path>
               <item name="awesomelib-go" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="GOPATH &lt;awesomelib-go&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="Go SDK 1.13.10" type="20ee2d1f:SyntheticLibraryElementNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="awesomelib-go" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="GOPATH &lt;awesomelib-go&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="Go SDK 1.13.10" type="20ee2d1f:SyntheticLibraryElementNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="github.com" type="462c0819:PsiDirectoryNode" />
+              <item name="net" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="awesomelib-go" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="GOPATH &lt;awesomelib-go&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="Go SDK 1.13.10" type="20ee2d1f:SyntheticLibraryElementNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="github.com" type="462c0819:PsiDirectoryNode" />
-              <item name="Shopify" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="awesomelib-go" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="GOPATH &lt;awesomelib-go&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="github.com" type="462c0819:PsiDirectoryNode" />
-              <item name="Shopify" type="462c0819:PsiDirectoryNode" />
-              <item name="sarama" type="462c0819:PsiDirectoryNode" />
+              <item name="net" type="462c0819:PsiDirectoryNode" />
+              <item name="rpc" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -313,18 +274,18 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/rpclib/safe_rpc/hello" />
+      <recent name="$PROJECT_DIR$/rpclib/safe_rpc/HelloService" />
+      <recent name="$PROJECT_DIR$/rpclib/easy_rpc" />
       <recent name="$PROJECT_DIR$/go_source" />
       <recent name="$PROJECT_DIR$/crawler" />
-      <recent name="$PROJECT_DIR$/library/test" />
-      <recent name="$PROJECT_DIR$/library/socket" />
-      <recent name="$PROJECT_DIR$/library" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/rpclib/proto_rpc" />
+      <recent name="$PROJECT_DIR$/rpclib/json_rpc/hello" />
+      <recent name="$PROJECT_DIR$/rpclib/json_rpc" />
       <recent name="$PROJECT_DIR$/kafka/sarama_client" />
       <recent name="$PROJECT_DIR$/leetcode" />
-      <recent name="$PROJECT_DIR$/algorithms/sort/bucket" />
-      <recent name="$PROJECT_DIR$/study/geek36" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -339,63 +300,61 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Test.TestFactoryMethod in factory_method_test.go">
-    <configuration name="go build hello_http.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
+  <component name="RunManager" selected="Go Build.go build leetcode05.go">
+    <configuration name="go build leetcode05.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
       <module name="awesomelib-go" />
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/study/http/hello_http.go" />
+      <filePath value="$PROJECT_DIR$/leetcode/leetcode05.go" />
       <directory value="$PROJECT_DIR$/" />
     </configuration>
-    <configuration name="go build kafka_consumer.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
+    <configuration name="go build leetcode4.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
       <module name="awesomelib-go" />
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/kafka/kafka_consumer.go" />
+      <filePath value="$PROJECT_DIR$/leetcode/leetcode4.go" />
       <directory value="$PROJECT_DIR$/" />
     </configuration>
-    <configuration name="go build main_sarama.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
+    <configuration name="go build logger.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
       <module name="awesomelib-go" />
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/kafka/main_sarama.go" />
+      <filePath value="$PROJECT_DIR$/utils/logger.go" />
       <directory value="$PROJECT_DIR$/" />
     </configuration>
-    <configuration name="TestFactoryMethod in factory_method_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true">
+    <configuration name="go build rpc_client.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
       <module name="awesomelib-go" />
-      <working_directory value="$PROJECT_DIR$/pattern/02_factory_method" />
+      <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="awesomelib-go/pattern/02_factory_method" />
-      <pattern value="^TestFactoryMethod$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/rpclib/easy_rpc/rpc_client.go" />
+      <directory value="$PROJECT_DIR$/" />
     </configuration>
-    <configuration name="TestType1 in simple_factory_pattern_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true">
+    <configuration name="go build rpc_server.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
       <module name="awesomelib-go" />
-      <working_directory value="$PROJECT_DIR$/pattern/simple_factory" />
+      <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="awesomelib-go/pattern/simple_factory" />
-      <pattern value="^TestType1$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/rpclib/easy_rpc/rpc_server.go" />
+      <directory value="$PROJECT_DIR$/" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Go Build.go build hello_http.go" />
-      <item index="1" class="java.lang.String" itemvalue="Go Build.go build kafka_consumer.go" />
-      <item index="2" class="java.lang.String" itemvalue="Go Build.go build main_sarama.go" />
-      <item index="3" class="java.lang.String" itemvalue="Go Test.TestType1 in simple_factory_pattern_test.go" />
-      <item index="4" class="java.lang.String" itemvalue="Go Test.TestFactoryMethod in factory_method_test.go" />
+      <item index="0" class="java.lang.String" itemvalue="Go Build.go build logger.go" />
+      <item index="1" class="java.lang.String" itemvalue="Go Build.go build leetcode4.go" />
+      <item index="2" class="java.lang.String" itemvalue="Go Build.go build leetcode05.go" />
+      <item index="3" class="java.lang.String" itemvalue="Go Build.go build rpc_server.go" />
+      <item index="4" class="java.lang.String" itemvalue="Go Build.go build rpc_client.go" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Go Test.TestFactoryMethod in factory_method_test.go" />
-        <item index="1" class="java.lang.String" itemvalue="Go Test.TestType1 in simple_factory_pattern_test.go" />
-        <item index="2" class="java.lang.String" itemvalue="Go Build.go build kafka_consumer.go" />
-        <item index="3" class="java.lang.String" itemvalue="Go Build.go build main_sarama.go" />
-        <item index="4" class="java.lang.String" itemvalue="Go Build.go build hello_http.go" />
+        <item index="0" class="java.lang.String" itemvalue="Go Build.go build leetcode05.go" />
+        <item index="1" class="java.lang.String" itemvalue="Go Build.go build rpc_client.go" />
+        <item index="2" class="java.lang.String" itemvalue="Go Build.go build rpc_server.go" />
+        <item index="3" class="java.lang.String" itemvalue="Go Build.go build leetcode4.go" />
+        <item index="4" class="java.lang.String" itemvalue="Go Build.go build logger.go" />
       </list>
     </recent_temporary>
   </component>
@@ -444,17 +403,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="825" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="825" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23390558" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27539343" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3219178" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32054794" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32739726" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30273974" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30136988" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30464482" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -515,234 +474,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/crawler/video_crawler/17220181.jpg" />
-    <entry file="file://$PROJECT_DIR$/content.txt" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="15" lean-forward="true" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crawler/cl/url_parser.go" />
-    <entry file="file://$PROJECT_DIR$/crawler/cl/crawler_url.go" />
-    <entry file="file://$PROJECT_DIR$/crawler/default.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crawler/cl/save_service.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crawler/cl/download_service.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crawler/cl/parse_service.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="51" lean-forward="false" selection-start-line="41" selection-start-column="51" selection-end-line="41" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../golang.org/x/net/html/node.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crawler/crawler_utils/coder.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crawler/cl_main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="34" column="31" lean-forward="false" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algorithms/sort/struct_sort.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-186">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/qrcode_util.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/sms_util.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="34" column="2" lean-forward="false" selection-start-line="34" selection-start-column="2" selection-end-line="34" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/17220181.jpg" />
-    <entry file="file://$PROJECT_DIR$/crawler/video_crawler/ts.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="33" column="44" lean-forward="true" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crawler/toutiao_main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crawler/zhihu_question.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crawler/zhihu_main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crawler/cl/schedule_service.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="22" column="7" lean-forward="false" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crawler/zhihu/schedule_service.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crawler/zhihu/client_service.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crawler/toutiao/schedule_service.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crawler/cl/client_service.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="17" column="1" lean-forward="false" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web.go" />
-    <entry file="file://$PROJECT_DIR$/study/test_heap.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/go/src/strings/strings_amd64.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="26" column="5" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/study/http/hello_http.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="38" column="21" lean-forward="false" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/go/src/net/dial.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8685">
-          <caret line="584" column="43" lean-forward="false" selection-start-line="584" selection-start-column="43" selection-end-line="584" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/go/src/net/net.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5310">
-          <caret line="362" column="4" lean-forward="false" selection-start-line="362" selection-start-column="4" selection-end-line="362" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/go/src/net/http/server.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="2618" column="18" lean-forward="false" selection-start-line="2618" selection-start-column="18" selection-end-line="2618" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../github.com/Shopify/sarama/consumer.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kafka/kafka_producer.go" />
-    <entry file="file://$PROJECT_DIR$/kafka/kafka_consumer.go" />
-    <entry file="file://$PROJECT_DIR$/../github.com/Shopify/sarama/config.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../github.com/Shopify/sarama/client.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1302">
-          <caret line="121" column="5" lean-forward="false" selection-start-line="121" selection-start-column="5" selection-end-line="121" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../github.com/Shopify/sarama/async_producer.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="111" column="25" lean-forward="false" selection-start-line="111" selection-start-column="25" selection-end-line="111" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../github.com/Shopify/sarama/utils.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -754,9 +485,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="455">
           <caret line="88" column="36" lean-forward="false" selection-start-line="88" selection-start-column="36" selection-end-line="88" selection-end-column="36" />
-          <folding>
-            <element signature="e#23#80#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -764,9 +492,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="650">
           <caret line="94" column="19" lean-forward="false" selection-start-line="94" selection-start-column="19" selection-end-line="94" selection-end-column="19" />
-          <folding>
-            <element signature="e#16#29#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -774,7 +499,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="8" lean-forward="true" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -782,9 +506,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="e#23#77#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -792,9 +513,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-          <folding>
-            <element signature="e#14#56#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -802,7 +520,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
           <caret line="710" column="0" lean-forward="false" selection-start-line="710" selection-start-column="0" selection-end-line="710" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -810,7 +527,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
           <caret line="490" column="0" lean-forward="false" selection-start-line="490" selection-start-column="0" selection-end-line="490" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -818,17 +534,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding>
-            <element signature="e#24#40#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pattern/01_simple_factory/simple_factory_pattern.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -836,17 +548,254 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="35" lean-forward="false" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pattern/factory.go" />
+    <entry file="file://$PROJECT_DIR$/pattern/02_factory_method/factory_method.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpclib/safe_rpc/hello/hello1.go" />
+    <entry file="file://$PROJECT_DIR$/rpclib/safe_rpc/rpc_server.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpclib/safe_rpc/hello/hello_alice.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="42" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpclib/easy_rpc/hello/hello.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpclib/safe_rpc/rpc_client.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpclib/json_rpc/hello/hello_json.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/net/rpc/jsonrpc/server.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="36" column="5" lean-forward="false" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/net/rpc/server_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="35" column="1" lean-forward="true" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpclib/json_rpc/rpc_client.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpclib/json_rpc/rpc_service.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="19" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="33" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpclib/http_rpc/rpc_service.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="28" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpclib/http_rpc/rpc_client.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="9" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpclib/proto_rpc/rpc_client.go" />
+    <entry file="file://$PROJECT_DIR$/rpclib/proto_rpc/pb/arith.pb.go" />
+    <entry file="file://$PROJECT_DIR$/rpclib/proto_rpc/pb/arith.proto" />
+    <entry file="file://$PROJECT_DIR$/rpclib/test/arith.pb/arith.pb.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpclib/test/arith.pb/arith.proto">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="1" lean-forward="false" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpclib/proto_rpc/rpc_server.go" />
+    <entry file="file://$PROJECT_DIR$/rpclib/test/rpc_server.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="1" lean-forward="false" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpclib/protobuf_rpc/pbs/hello.pb.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="52" column="24" lean-forward="false" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/log_util.go" />
+    <entry file="file://$PROJECT_DIR$/logs/log.2020041520">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpclib/grpc.go" />
+    <entry file="file://$PROJECT_DIR$/rpclib/grpc/helloworld.proto">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/logger.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpclib/protobuf_rpc/pbs/hello.proto">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpclib/protobuf_rpc/pbs/base.proto">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="11" lean-forward="false" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/leetcode69.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/sort/sort.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="200" column="16" lean-forward="true" selection-start-line="200" selection-start-column="16" selection-end-line="200" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpclib/easy_rpc/rpc_client.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="18" lean-forward="true" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
           <folding>
-            <element signature="e#24#40#0" expanded="true" />
+            <element signature="e#14#35#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pattern/02_factory_method/factory_method.go">
+    <entry file="file:///usr/local/go/src/go/token/token.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+        <state relative-caret-position="160">
+          <caret line="315" column="5" lean-forward="false" selection-start-line="315" selection-start-column="5" selection-end-line="315" selection-end-column="5" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/reflect/value.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="2315" column="5" lean-forward="false" selection-start-line="2315" selection-start-column="5" selection-end-line="2315" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/encoding/gob/encoder.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/net/rpc/server.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="717" column="19" lean-forward="true" selection-start-line="717" selection-start-column="19" selection-end-line="717" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/net/rpc/client.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="33" column="26" lean-forward="false" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpclib/easy_rpc/rpc_server.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="26" column="27" lean-forward="true" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/leetcode4.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+          <folding>
+            <element signature="e#14#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/leetcode05.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="923">
+          <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding>
+            <element signature="e#14#27#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

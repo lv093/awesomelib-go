@@ -1,0 +1,24 @@
+/**/
+syntax = "proto3";
+package pb;
+message Person {
+    reserved 3, 15, 9 to 11;
+    string name = 1;
+    int32 id = 2;
+    string email = 5;
+
+//    BaseStruct other = 6;
+
+    enum PhoneType {
+        MOBILE = 0;
+        HOME = 2;
+        WORK = 3;
+    }
+
+    message PhoneNumber {
+        string number = 1;
+        PhoneType type = 2;
+    }
+
+    repeated PhoneNumber phone = 4;
+}
