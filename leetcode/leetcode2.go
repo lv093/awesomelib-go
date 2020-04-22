@@ -10,13 +10,14 @@ package main
 输出：7 -> 0 -> 8
 原因：342 + 465 = 807
  */
-//Definition for singly-linked list.
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
-
-func main() {
+/**
+ * Definition for singly-linked list.
+ * type ListNode struct {
+ *     Val int
+ *     Next *ListNode
+ * }
+ */
+ func main() {
 	l1 := &ListNode{1, nil}
 	l2 := &ListNode{9, &ListNode{9, nil}}
 	res := addTwoNumbers(l1, l2)
