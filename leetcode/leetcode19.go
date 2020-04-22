@@ -2,11 +2,6 @@ package main
 
 import "fmt"
 
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
-
 func main() {
 	head := &ListNode{1, &ListNode{}}
 	node2 := &ListNode{2, &ListNode{}}
