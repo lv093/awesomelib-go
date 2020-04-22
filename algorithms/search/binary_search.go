@@ -1,6 +1,5 @@
-package main
+package search
 
-import "fmt"
 
 /**
 二分查找的四种变体——几种变体的解决方法类似
@@ -9,11 +8,6 @@ import "fmt"
 变体三：查找第一个大于等于给定值的元素
 变体四：查找最后一个小于等于给定值的元素
  */
-
-func main() {
-	sources := []int {2, 23, 23, 23, 23, 23, 23}
-	fmt.Println(BinarySearchFirstEquals(sources, 23))
-}
 
 /**
 二分查找标准

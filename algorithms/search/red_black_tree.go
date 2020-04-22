@@ -1,4 +1,4 @@
-package main
+package search
 
 const (
 	RED = true
@@ -24,9 +24,9 @@ type RBTree struct {
 	Root 	*RBNode
 }
 
-func (this *RBTree) Insert(target *RBNode) bool {
-
-}
+//func (this *RBTree) Insert(target *RBNode) bool {
+//
+//}
 
 func (this *RBTree) rotate(x *RBNode, isLeftRotate bool) {
 	if isLeftRotate {
